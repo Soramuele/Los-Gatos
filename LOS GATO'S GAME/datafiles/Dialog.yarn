@@ -1,0 +1,319 @@
+#__PrivCrochet_version:1
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 559,-137
+__PrivCrochet_tags: 
+title: Toad
+---
+Toad: Oh, hi there
+Toad: ...don't look so scared little rat, whats your name?
+Pierre: Pierre, you?
+Toad: That doesn't matter, what are you in for?
+Pierre: Nothing... got screwed over
+Toad: Huh, really?
+Pierre: I swear to God, I haven't done anything. I have to get out!
+Toad: You know what, maybe I could help you... but first hand me that notebook over there
+Toad: An old toad like me ain't so flexible anymore
+Pierre: Oh, of course
+Toad: I will give you the names of some inmates that might be willing to help you, Just know it will take some convincing
+Toad: First is Gustav, a brown hamster who doesn't trust easily, always talks about the life he used to have. The second one is -- . Take this notebook, I wrote down a description for each of them, in case you forget
+Pierre: Thank you so much! I don't even know how to thank you
+Toad: Don't thank me yet, You're still here
+Pierre: Can I just ask, why are you helping me?
+Toad: I don't like to have cell mates, and maybe I feel a little bad for you
+Toad: Now go and get out!
+    -> Thank you
+        <<jump Option A>>
+    -> Fuck you
+        <<jump Option B>>
+    -> I don't want to escape anymore
+        <<jump Option C>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 781,-241
+__PrivCrochet_tags: 
+title: Option A
+---
+Toad: Bye
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1026,-240
+__PrivCrochet_tags: 
+title: Option B
+---
+Toad: Fuck YOU!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1264,-241
+__PrivCrochet_tags: 
+title: Option C
+---
+Toad: Get the fuck out!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 559,432
+__PrivCrochet_tags: 
+title: Robert
+---
+???: Hello little rat. Why are you talking to me?
+???: Do you need something?
+    -> Hello, I'm Pierre. Are you Robert?
+        <<jump good cour>>
+    -> I'm Pierre. You are Roberto, I assume.
+        <<jump bad cour>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 787,312
+__PrivCrochet_tags: 
+title: good cour
+---
+Robert: Yes, that's me
+Robert: I'm the scavenger here, and the one that supplies everyone with what they need
+Robert: But I don't work for free, so I will help you if you show some respect
+    -> I understand, I could use your help
+        Pierre: What brought you here? Raccoons aren't known for getting caught
+        <<jump good 1.1>>
+    -> Scavenger, huh?
+        Pierre: It seems like it's always raccoons hiking up prices
+        <<jump bad 1.2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 787,556
+__PrivCrochet_tags: 
+title: bad cour
+---
+Robert: The name's Robert, and I’m the one who scavenges and supplies goods around here
+Robert: Remember, I don’t do favors without something in return
+Robert: So, you'll have to make it worth my while
+    -> Fair enough
+        Pierre: So, what's your story? It's rare to see a raccoon behind bars
+        <<jump good 2.1>>
+    -> Typical
+        Pierre: Just because you're a raccoon, you think you can overcharge
+        <<jump bad 2.2>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1030,81
+__PrivCrochet_tags: 
+title: good 1.1
+---
+Robert: Alright, since you asked nicely
+Robert: I got nabbed by the cat police while looking for a lost ring in a backyard. They didn't listen to my side of the story, simply because I'm a raccoon
+Robert: Sure, I was desperate for cash, but I am no thief
+    -> That's rough
+        Pierre: You know, you could join us in trying to escape
+        <<jump good leader>>
+    -> Escape is in the works. You can tag along if you don't want to rot in here
+        <<jump good leader>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1033,311
+__PrivCrochet_tags: 
+title: bad 1.2
+---
+Robert: Not too friendly, are we? Maybe you're just as bad as those who locked me up without a second thought
+Robert: I do not overprice! I take risks to get these goods
+    -> Let's forget the past
+        Pierre: There's a breakout planned. You in?
+        <<jump good leader>>
+    -> I'm breaking out. Help me, and you're free too
+        Pierre: Otherwise, stay put
+        <<jump bad leader>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1346,311
+__PrivCrochet_tags: 
+title: good leader
+---
+Robert: You've got a deal! I will join your escape plan
+Robert: But remember, the bag of lockpicks isn’t a gift, it’s part of our partnership now
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1033,555
+__PrivCrochet_tags: 
+title: good 2.1
+---
+Robert: Alright, since you asked nicely
+Robert: I got nabbed by the cat police while looking for a lost ring in a backyard. They didn't listen to my side of the story, simply because I'm a raccoon
+Robert: Sure, I was desperate for cash, but I am no thief
+    -> That's rough
+        Pierre: You know, you could join us in trying to escape
+        <<jump good leader>>
+    -> Escape is in the works. You can tag along if you don't want to rot in here
+        <<jump bad leader>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1035,795
+__PrivCrochet_tags: 
+title: bad 2.2
+---
+Robert: Not too friendly, are we? Maybe you're just as bad as those who locked me up without a second thought
+Robert: I do not overprice! I take risks to get these goods
+    -> Let's forget the past
+        Pierre: There's a breakout planned. You in?
+        <<jump bad leader>>
+    -> I'm breaking out. Help me, and you're free too. Otherwise, stay put
+        <<jump bad leader>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1346,555
+__PrivCrochet_tags: 
+title: bad leader
+---
+Robert: I find my own way, Pierre
+Robert: I won’t tag along with someone who lacks basic respect. You can buy the tools from me, but that's all you'll get!
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1762,363
+__PrivCrochet_tags: 
+title: Gustav
+---
+Pierre: "Gustav, may I have a word with you?"
+Gustav: Looking up from his book, "Of course, Pierre. What's on your mind?"
+Pierre: "It's about the escape plan that's being whispered around. I'm thinking of joining, and I believe we need you too."
+Gustav: Raises an eyebrow slightly, "An escape plan, you say? That's a bold move in a place like this
+Gustav: Tell me, why do you think I should get involved in such a risky effort?"
+    -> Acknowledge the uncontrollable
+        <<jump AcknowledgingUncontrollable>>
+    -> Nostalgia
+        <<jump Nostalgia>>
+    -> Being vs doing
+        <<jump BeingVsDoing>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1993,-120
+__PrivCrochet_tags: 
+title: AcknowledgingUncontrollable
+---
+Pierre: "We can't control everything, Gustav, but this is our chance to take control of something in our lives. Don't you agree?"
+Gustav: "There's wisdom in recognizing what we can and cannot control. What makes you think this plan is within our control?"
+    -> Some things are beyond us, but this escape isn't. We can make this happen
+        <<jump PositiveOutcomeControl>>
+    -> We can take control back, Gustav. This is our chance
+        <<jump NegativeOutcomeControl>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1993,364
+__PrivCrochet_tags: 
+title: Nostalgia
+---
+Pierre: "Gustav, remember the days you spent outside these walls? Joining us could bring back a piece of that past."
+Gustav: "The past is a sweet memory, but one cannot live in it. What assurances do I have for the future?"
+    -> Think about the freedom you had. We can reclaim a piece of that
+        <<jump PositiveOutcomeNostalgia>>
+    -> Don't you miss the old days? We can bring some of that back
+        <<jump NegativeOutcomeNostalgia>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 1995,841
+__PrivCrochet_tags: 
+title: BeingVsDoing
+---
+Pierre: I know you're a thinker, Gustav, but sometimes action is what's needed. We could use your insights, but we have to act fast.
+Gustav: Hasty actions lead to mistakes. But perhaps there's excellence in balancing thought with action. Tell me more.
+    -> Let us make a change together
+    Pierre: We need your wisdom, Gustav, but also your action
+        <<jump PositiveOutcomeAction>>
+    -> Now's not the time for being. We need to act!
+        <<jump NegativeOutcomeAction>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2255,-236
+__PrivCrochet_tags: 
+title: PositiveOutcomeControl
+---
+Gustav: "True, not all is lost to fate. Perhaps it's time to take a stand. Tell me, what plans do we have?"
+    -> Escape Through the Laundry
+        <<jump LaundryEscapePlan>>
+    -> Escape During Prison Yard Walk
+        <<jump YardWalkEscapePlan>>
+    -> Escape Through the Cafeteria
+        <<jump CafeteriaEscapePlan>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2255,-14
+__PrivCrochet_tags: 
+title: NegativeOutcomeControl
+---
+Pierre: "We can take control back, Gustav. This is our chance."
+Gustav: "I admire your spirit, but I see too many uncontrollable variables. I'll stay
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2257,745
+__PrivCrochet_tags: 
+title: PositiveOutcomeAction
+---
+Gustav: Balance is key, you're right. I will join you in this endeavour. Which escape route are we considering?
+    -> Escape Through the Laundry
+        <<jump LaundryEscapePlan>>
+    -> Escape During Prison Yard Walk
+        <<jump YardWalkEscapePlan>>
+    -> Escape Through the Cafeteria
+        <<jump CafeteriaEscapePlan>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2257,968
+__PrivCrochet_tags: 
+title: NegativeOutcomeAction
+---
+Pierre: Now's not the time for being. We need to act!
+Gustav: Rash actions lead to failure. I fear this plan is too impulsive. I must decline.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2255,246
+__PrivCrochet_tags: 
+title: PositiveOutcomeNostalgia
+---
+Gustav: "Perhaps you're right. Reclaiming a part of my past might be worth the risk. But how do you propose we go about it?"
+    -> Escape Through the Laundry
+        <<jump LaundryEscapePlan>>
+    -> Escape During Prison Yard Walk
+        <<jump YardWalkEscapePlan>>
+    -> Escape Through the Cafeteria
+        <<jump CafeteriaEscapePlan>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2255,466
+__PrivCrochet_tags: 
+title: NegativeOutcomeNostalgia
+---
+Pierre: Don't you miss the old days? We can bring some of that back.
+Gustav: The past is comforting, but it's gone. Escaping won't bring it back. I'm sorry, I can't join you.
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2692,148
+__PrivCrochet_tags: 
+title: LaundryEscapePlan
+---
+Pierre: "The first plan involves the laundry. We'll create a diversion to distract the guards. Once they're busy, we sneak into the laundry cart. From there, we access the underground tunnels beneath the prison."
+Gustav: "Interesting. The laundry route could provide  a good cover. And the tunnels... they're less monitored, I presume?"
+Pierre: "Exactly. We've observed that the guard's attention wanes during laundry shifts. And the tunnels are rarely patrolled. It's our best shot."
+Gustav: "A risky plan, but well thought out. I believe this could work with the right timing and stealth. I'm in for this plan."
+    <<jump GustavDecides>>
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2695,370
+__PrivCrochet_tags: 
+title: YardWalkEscapePlan
+---
+Pierre: "Our second option is during our walk in the prison yard. We've noticed a blind spot in the guard's routine. At a certain point, their attention is distracted, and the fence is temporarily unguarded."
+Gustav: "The yard is open and exposed. Timing would have to be impeccable. And what after the fence? We'd still be in broad daylight."
+Pierre: "True, the exposure is a risk, but with speed and precision, we could make it to the outer walls. From there, it's a dash to freedom."
+Gustav: "A daring plan, but too reliant on precise timing and luck. I fear it's too risky."
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2698,590
+__PrivCrochet_tags: 
+title: CafeteriaEscapePlan
+---
+Pierre: "Lastly, there's a chance during mealtime in the cafeteria. We create a commotion to distract the guards and slip out through the kitchen. There's a small vent leading outside from there."
+Gustav: "The cafeteria is always bustling. The commotion could work, but the kitchen vent – is it large enough for us to pass through?"
+Pierre: "It's tight, but durable. We'd have to be quick to avoid being caught in the act, especially with the kitchen staff around."
+Gustav: "A plan with potential, but the risks are numerous. The risk of being caught in such a public area is high."
+===
+__PrivCrochet_colorID: 0
+__PrivCrochet_position: 2932,148
+__PrivCrochet_tags: 
+title: GustavDecides
+---
+Gustav: Considering all the options, the laundry route seems the most viable. The cover of the laundry cart and the relative obscurity of the tunnels work in our favor. It's a calculated risk, but with a sound strategy, we stand a good chance. Let's go with the laundry escape plan.
+===
